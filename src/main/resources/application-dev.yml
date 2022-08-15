@@ -4,10 +4,11 @@ spring:
   cloud:
     config:
       name: fund,account,bank,common
-
+  kafka:
+    bootstrap-servers: localhost:9092
 
 management:
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: busrefresh
